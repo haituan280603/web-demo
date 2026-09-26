@@ -1,0 +1,288 @@
+/* =======================================================
+   style.css — CSS thuần cho trang giới thiệu Blakletterpress
+   ======================================================= */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background: #faf6ee;
+	color: #3a3a3a;
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+}
+a {
+	color: #2f5fbf;
+}
+h1, h2, h3 {
+	color: #232323;
+	margin: 0 0 14px;
+}
+
+/* ---------------- HEADER ---------------- */
+.site-header {
+	background: linear-gradient(90deg, #2b2420 0%, #8a6a3d 100%);
+	color: #fff;
+	text-align: center;
+	padding: 34px 20px 26px;
+}
+.site-header .site-name {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 34px;
+	font-weight: bold;
+	letter-spacing: .5px;
+}
+.site-header .tagline {
+	margin: 6px 0 0;
+	color: #e7dcc9;
+	font-style: italic;
+	font-size: 15px;
+}
+
+/* ---------------- NAV ---------------- */
+.main-nav {
+	background: #1b1a19;
+}
+.main-nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 36px;
+	margin: 0;
+	padding: 14px 20px;
+}
+.main-nav a {
+	color: #e9e4da;
+	text-decoration: none;
+	font-size: 14px;
+}
+.main-nav a:hover {
+	color: #d8b26a;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.layout {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 40px 24px;
+	display: flex;
+	align-items: flex-start;
+	gap: 32px;
+}
+main {
+	flex: 1;
+	min-width: 0;
+}
+.sidebar {
+	width: 280px;
+	flex-shrink: 0;
+	background: #f2e9da;
+	border-radius: 6px;
+	padding: 24px;
+}
+.sidebar h2 {
+	font-size: 18px;
+	margin-bottom: 12px;
+}
+.sidebar .recent {
+	list-style: none;
+	margin: 0 0 16px;
+	padding: 0;
+}
+.sidebar .recent li {
+	margin-bottom: 8px;
+}
+.sidebar .recent a {
+	text-decoration: underline;
+	font-size: 14px;
+}
+.sidebar p {
+	font-size: 14px;
+	margin: 0;
+}
+
+/* ---------------- ARTICLE / SECTION ---------------- */
+main > article, main > section {
+	margin-bottom: 42px;
+}
+main h1 {
+	font-size: 26px;
+}
+main h2 {
+	font-size: 22px;
+}
+main figure {
+	margin: 0 0 12px;
+}
+main figure img {
+	width: 100%;
+	max-height: 380px;
+	object-fit: cover;
+	border-radius: 4px;
+	display: block;
+}
+main figcaption {
+	font-size: 13px;
+	color: #6c6c6c;
+	margin-top: 6px;
+}
+main p {
+	font-size: 15px;
+	color: #3a3a3a;
+}
+
+/* ---------------- VALUE CARDS ---------------- */
+.value-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.value-card {
+	background: #fff;
+	border: 1px solid #e7e2d8;
+	border-radius: 6px;
+	padding: 20px;
+}
+.value-card h3 {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+.value-card p {
+	font-size: 14px;
+	margin: 0;
+}
+
+/* ---------------- TEAM ---------------- */
+.team-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+.member {
+	background: #fff;
+	border: 1px solid #e7e2d8;
+	border-radius: 6px;
+	padding: 20px;
+}
+.member img {
+	width: 76px;
+	height: 76px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 12px;
+}
+.member h3 {
+	font-size: 15px;
+	margin-bottom: 4px;
+}
+.member p {
+	font-size: 14px;
+	color: #5a5a5a;
+	margin: 0;
+}
+
+/* ---------------- CONTACT FORM ---------------- */
+.contact-form {
+	background: #fff;
+	border: 1px solid #e7e2d8;
+	border-radius: 6px;
+	padding: 26px 28px;
+	max-width: 460px;
+}
+.contact-form p {
+	margin: 0 0 18px;
+}
+.contact-form label {
+	display: block;
+	font-size: 14px;
+	color: #3a3a3a;
+	margin-bottom: 6px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+	width: 100%;
+	border: 1px solid #d8d2c4;
+	border-radius: 4px;
+	padding: 10px 12px;
+	font-size: 14px;
+	font-family: inherit;
+	color: #3a3a3a;
+}
+.contact-form textarea {
+	resize: vertical;
+}
+.contact-form button {
+	background: #c9a35c;
+	color: #2b2420;
+	border: 0;
+	border-radius: 4px;
+	padding: 10px 22px;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.contact-form button:hover {
+	background: #b98f45;
+}
+
+/* ---------------- FOOTER ---------------- */
+.site-footer {
+	background: #171512;
+	color: #cfc9bd;
+	padding: 40px 24px 20px;
+}
+.footer-cols {
+	list-style: none;
+	max-width: 1080px;
+	margin: 0 auto 24px;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px;
+}
+.footer-cols h3 {
+	color: #c9a35c;
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+.footer-cols p {
+	font-size: 13px;
+	color: #b7b0a3;
+	margin: 0;
+}
+.site-footer .copyright {
+	text-align: center;
+	font-size: 12px;
+	color: #7a756b;
+	border-top: 1px solid #2b2822;
+	padding-top: 16px;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 860px) {
+	.layout {
+		flex-direction: column;
+	}
+	.sidebar {
+		width: 100%;
+	}
+	.value-list, .team-list {
+		grid-template-columns: 1fr;
+	}
+	.footer-cols {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
